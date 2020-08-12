@@ -209,10 +209,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2783691836776143264, guid: 19c514167484c8749b8754323e7bdd82,
+        type: 3}
+      propertyPath: UpControl
+      value: 273
+      objectReference: {fileID: 0}
+    - target: {fileID: 2783691836776143264, guid: 19c514167484c8749b8754323e7bdd82,
+        type: 3}
+      propertyPath: DownControl
+      value: 274
+      objectReference: {fileID: 0}
     - target: {fileID: 2783691836776143265, guid: 19c514167484c8749b8754323e7bdd82,
         type: 3}
       propertyPath: m_Name
-      value: GamePad (1)
+      value: GamePad2
       objectReference: {fileID: 0}
     - target: {fileID: 2783691836776143268, guid: 19c514167484c8749b8754323e7bdd82,
         type: 3}
@@ -2409,10 +2419,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2783691836776143264, guid: 19c514167484c8749b8754323e7bdd82,
+        type: 3}
+      propertyPath: UpControl
+      value: 119
+      objectReference: {fileID: 0}
+    - target: {fileID: 2783691836776143264, guid: 19c514167484c8749b8754323e7bdd82,
+        type: 3}
+      propertyPath: DownControl
+      value: 115
+      objectReference: {fileID: 0}
     - target: {fileID: 2783691836776143265, guid: 19c514167484c8749b8754323e7bdd82,
         type: 3}
       propertyPath: m_Name
-      value: GamePad
+      value: GamePad1
       objectReference: {fileID: 0}
     - target: {fileID: 2783691836776143268, guid: 19c514167484c8749b8754323e7bdd82,
         type: 3}
