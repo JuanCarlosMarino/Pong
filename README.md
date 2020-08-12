@@ -1,2 +1,2 @@
-# Pong_Prueba
-Esta es una prueba de pong
+# Pong
+Reto inicial clase videojuegos segundo semestre de 2020 - Universidad Pontificia Bolivariana
