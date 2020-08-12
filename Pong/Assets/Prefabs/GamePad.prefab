@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: 0.05
-  yOffsetInf: -3
-  yOffsetSup: 3
+  DownLimit: -3
+  UpLimit: 3
   UpControl: 0
   DownControl: 0

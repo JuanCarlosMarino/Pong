@@ -12,11 +12,11 @@ public class PadMovement : MonoBehaviour
     [Tooltip("Velocity in unity units!")]
     [SerializeField] private float velocity = 5f;
 
-    [Header("Separacion del sprite con el borde de la pantalla en Y abajo:")]
-    public float yOffsetInf;
+    [Header("Limite inferior:")]
+    public float DownLimit;
 
-    [Header("Separacion del sprite con el borde de la pantalla en Y arriba:")]
-    public float yOffsetSup;
+    [Header("Limite Superior:")]
+    public float UpLimit;
 
     [Header("Controles para GamePad:")]
     [SerializeField] private KeyCode UpControl; 
@@ -46,7 +46,7 @@ public class PadMovement : MonoBehaviour
         {
             Debug.LogWarning(message: "El objeto no tiene rigidbody!!!");
         }
-        //limitar
-        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, yOffsetInf, yOffsetSup), transform.position.z); 
+        //limitar en eje y
+        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, DownLimit, UpLimit), transform.position.z); 
     }
 }
