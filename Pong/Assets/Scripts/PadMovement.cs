@@ -40,12 +40,15 @@ public class PadMovement : MonoBehaviour
         //mover hacia abajo
         else if(Input.GetKey(DownControl))
             transform.Translate(x: 0f,y: -velocity,z: 0f);
-        if(!_rigidbody2D.Equals(other: null))
-            _rigidbody2D.AddForce(Vector2.up,ForceMode2D.Impulse);
-        else
-        {
-            Debug.LogWarning(message: "El objeto no tiene rigidbody!!!");
-        }
+
+        //Fuerza de impulso
+        //if(!_rigidbody2D.Equals(other: null))
+        //    _rigidbody2D.AddForce(Vector2.up,ForceMode2D.Impulse);
+        //else
+        //{
+        //    Debug.LogWarning(message: "El objeto no tiene rigidbody!!!");
+        //}
+
         //limitar en eje y
         transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, DownLimit, UpLimit), transform.position.z); 
     }
