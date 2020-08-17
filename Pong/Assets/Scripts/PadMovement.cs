@@ -23,10 +23,13 @@ public class PadMovement : MonoBehaviour
     [SerializeField] private KeyCode DownControl; 
 
     private Rigidbody2D _rigidbody2D;
+
+    public Vector3 startPosition;
     // Start is called before the first frame update
     void Start()
     {
-        _rigidbody2D = GetComponent<Rigidbody2D>();
+        startPosition = transform.position;
+        _rigidbody2D = GetComponent<Rigidbody2D>();        
     }
 
     // Update is called once per frame
@@ -51,5 +54,11 @@ public class PadMovement : MonoBehaviour
 
         //limitar en eje y
         transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, DownLimit, UpLimit), transform.position.z); 
+    }
+
+    public void Reset()
+    {
+        _rigidbody2D.velocity = Vector2.zero;
+        transform.position = startPosition;
     }
 }

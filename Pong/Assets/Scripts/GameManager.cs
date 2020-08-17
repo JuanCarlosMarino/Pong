@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -24,12 +25,20 @@ public class GameManager : MonoBehaviour
 
     public void Player1Scored(){
         Player1Score++;
-        Player1Text.GetComponent<TextMeshPro>().text= Player1Score.ToString();
+        Player1Text.GetComponent<TMP_Text>().text= Player1Score.ToString();
+        ResetPosition();
     }
     public void Player2Scored(){
         Player2Score++;
-        Player2Text.GetComponent<TextMeshPro>().text= Player2Score.ToString();
+        Player2Text.GetComponent<TMP_Text>().text= Player2Score.ToString();
+        ResetPosition();
     }
-    // Start is called before the first frame update
+    
+    private void ResetPosition()
+    {
+        Ball.GetComponent<BallMovement>().Reset();
+        GamePad1.GetComponent<PadMovement>().Reset();
+        GamePad2.GetComponent<PadMovement>().Reset();
+    }
     
 }
