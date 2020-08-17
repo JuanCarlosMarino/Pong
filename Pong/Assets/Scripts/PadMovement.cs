@@ -61,4 +61,9 @@ public class PadMovement : MonoBehaviour
         _rigidbody2D.velocity = Vector2.zero;
         transform.position = startPosition;
     }
+
+    public void ChangeVelocity()
+    {
+        velocity = velocity * -1;
+    }
 }

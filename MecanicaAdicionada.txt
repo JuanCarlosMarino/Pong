@@ -1,0 +1,2 @@
+La mecánica adicionada consiste, en que cada vez que un jugador anota le cambia el sentido de dirección al otro.
+Se realizó por medio de un método que cambia el valor de la velocidad del paddle.
