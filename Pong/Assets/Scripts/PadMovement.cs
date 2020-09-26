@@ -53,7 +53,7 @@ public class PadMovement : MonoBehaviour
         //}
 
         //limitar en eje y
-        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, DownLimit, UpLimit), transform.position.z); 
+        transform.position = new Vector3(transform.position.x,Mathf.Clamp(transform.position.y, DownLimit, UpLimit), transform.position.z); 
     }
 
     public void Reset()
