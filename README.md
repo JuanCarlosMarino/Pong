@@ -1,4 +1,4 @@
 # Pong
-Reto inicial clase videojuegos segundo semestre de 2020 - Universidad Pontificia Bolivariana
+Initial challenge class video games second semester of 2020 - Universidad Pontificia Bolivariana
 
-Hecho en unity versión:2019.4.7f1
+Made in unity version:2019.4.7f1
